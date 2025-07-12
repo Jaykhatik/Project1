@@ -296,9 +296,14 @@ nav a {
     background-color: red;
     margin-left: 10px;
     height: 460px;
-    width: 107%;
+    width: 109%;
     /* background-image: url(images/600_X_420.webp); */
-    background-size: cover;
+    border-radius: 5px;
+}
+
+.book1 img {
+    height: 100%;
+    width: 100%;
     border-radius: 5px;
 }
 
@@ -312,33 +317,39 @@ nav a {
 
 .lookimg1,
 .lookimg2 {
-    height: 220px;
+    height: 225px;
     width: 600px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.lookimg1 {
+.lookimg1 img {
+    height: 100%;
+    width: 100%;
     background-color: beige;
     /* background-image: url(images/2_e25f9f97-626d-43d3-a072-21c1240e36c1.webp); */
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
-.lookimg2 {
+.lookimg2 img {
+    height: 100%;
+    width: 100%;
     background-color: blueviolet;
     /* background-image: url(images/3_ffbe7b81-f755-4483-88c9-7fdec095d817.webp); */
     border-radius: 5px;
-   margin-top: 10px; 
+    margin-top: 10px;
 }
-.blogs{
+
+.blogs {
     height: 550px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 10px;
 }
-.text-blogs{
+
+.text-blogs {
     font-weight: 700;
     font-size: 25px;
     font-style: bold;
@@ -346,38 +357,43 @@ nav a {
     margin-bottom: 10px;
     margin-left: 15px;
 }
-.main-blogs{
+
+.main-blogs {
     display: flex;
     gap: 20px;
     padding: 10px;
 }
-.content-blogs{
+
+.content-blogs {
     background-color: rgb(241, 240, 240);
     border-radius: 5px;
-    
+
 }
-.content-blogs img{
+
+.content-blogs img {
     height: 280px;
     width: 420px;
     background-position: center;
     background-size: cover;
     border-radius: 5px;
 }
-.content-blogs h5{
+
+.content-blogs h5 {
     margin-left: 5px;
     font-size: 15px;
 }
 
-.content-blogs span{
+.content-blogs span {
     margin-left: 5px;
     font-size: 13px;
 }
 
-.content-blogs p{
+.content-blogs p {
     margin-left: 5px;
     font-size: 10px;
 }
-.content-blogs a{
+
+.content-blogs a {
     text-decoration: none;
     color: black;
     margin-left: 5px;
