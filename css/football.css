@@ -496,3 +496,138 @@ nav a {
 .logo img {
     width: 80px;
 }
+/* GENERAL FIX */
+.header2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* NAV DEFAULT */
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+/* ICON */
+.icon {
+    display: flex;
+    gap: 15px;
+}
+
+/* LOGO */
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* ================= MOBILE MENU BUTTON ================= */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 992px) {
+
+    nav {
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    .mega-menu {
+        width: 95vw;
+        left: 10px;
+        padding: 20px;
+    }
+
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    .header2 {
+        flex-wrap: wrap;
+    }
+
+    /* SHOW MENU BUTTON */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* HIDE NAV BY DEFAULT */
+    nav {
+        position: absolute;
+        top: 110px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 0;
+
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        transition: 0.3s;
+    }
+
+    /* SHOW NAV WHEN ACTIVE */
+    nav.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    /* ICONS SMALL */
+    .icon {
+        gap: 10px;
+        font-size: 18px;
+    }
+
+    /* TOP BAR TEXT */
+    .top_bar p {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    /* MEGA MENU MOBILE */
+    .mega-menu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        display: none;
+    }
+
+    .dropdown:hover .mega-menu {
+        display: block;
+    }
+
+    .category {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 480px) {
+
+    .logo img {
+        height: 40px;
+    }
+
+    .icon {
+        font-size: 16px;
+    }
+
+    .top_bar {
+        height: auto;
+        padding: 10px;
+    }
+}

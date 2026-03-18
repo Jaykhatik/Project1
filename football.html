@@ -27,6 +27,9 @@
                 <div class="logo">
                     <img src="images/Nivia-Logo-Black-SVG_2_1 (1).svg" alt="logo">
                 </div>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
                 <nav>
                     <a href="niveasport.html">ALL SPORTS</a>
                     <a href="">APPAREL</a>
@@ -229,7 +232,7 @@
                         <h5>Grounded in Grace: How to Choose the Perfect Yoga Mat for <br>Your Body, Practice & Progress
                         </h5>
                         <br>
-                    
+
                         <span>May 29,2025</span>
                         <p>Because the right mat isn't just support—it's your foundation.
                             Whether <br>you'reflowing through sun salutations, hol...</p>
@@ -301,6 +304,11 @@
             </div>
         </div>
     </footer>
+    <script>
+        function toggleMenu() {
+            document.querySelector("nav").classList.toggle("active");
+        }
+    </script>
 </body>
 
 </html>
